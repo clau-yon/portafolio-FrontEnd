@@ -1,11 +1,12 @@
 *{
-    grid: flexbox;
+    
     margin:0;
     padding: 0;
 }
 
 body{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 100vh;
 }
 
 .text{
@@ -15,10 +16,13 @@ body{
 /*CORREGIR BANNER*/
 div.banner {
     background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)) ,url("/images/which-desk-setup-is-best-for-a-developer-379-1602744788208.webp");
-    background-size:cover;
-    position:relative;
     width: 100%;
-    min-height: 90vh;
+    height: calc(108vh - 50px);
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 
