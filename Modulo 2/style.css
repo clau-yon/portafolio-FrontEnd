@@ -1,17 +1,66 @@
-#Logo{
-    width: 80%;
-    height: 60%;
-}
-#nav-bar{
-    width: 80%;
-    height: 75%;
+*{
+    grid: flexbox;
+    margin:0;
+    padding: 0;
 }
 
-body {
-    background-size: cover ;
-    background-image: url("/Imagenes/photo-1592609931095-54a2168ae893.jpg");
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-    color: white;
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+.text{
+    padding:50px;
+}
+
+/*CORREGIR BANNER*/
+div.banner {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)) ,url("/images/which-desk-setup-is-best-for-a-developer-379-1602744788208.webp");
+    background-size:cover;
+    position:relative;
+    width: 100%;
+    min-height: 90vh;
+}
+
+
+
+h1.intro{
+  padding-top:15%;
+  font-size: 4rem;
+  font-weight: bold;
+  width:100vw;  
+}
+@media (max-width:768px) {
+    .banner{
+        min-height: 30vh;
+    }
+}
+
+/*CORREGIR FOTO*/
+.foto img{
+    width: 200px;
+    height: 200px;
+    border-radius:60% ;
+    align-items:flex-end;
+    display: flex;
+}
+
+
+
+
+footer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #a6a8a8;
+    height:auto;
+    width:100vw;
+    font-family: "Open Sans";
+    padding-top: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.footer-bottom{
+    width: 100vw;
+    text-align: center;
+    font-size: 14px;
+}

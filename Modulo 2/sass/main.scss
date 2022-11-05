@@ -1,0 +1,17 @@
+//con esto remplazamos
+//$primary: #c29938;
+
+//importar funciones para crear nueva paleta
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+//con esto creamos
+$custom-theme-color: (
+    "head": #a6a8a8,
+    "back": #8d99ae,
+    "square": #2b2d42
+);
+
+
+$theme-colors: map-merge($custom-theme-color, $theme-colors);
+@import '../node_modules/bootstrap/scss/bootstrap';
