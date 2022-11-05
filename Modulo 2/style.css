@@ -17,7 +17,7 @@ body{
 div.banner {
     background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)) ,url("/images/which-desk-setup-is-best-for-a-developer-379-1602744788208.webp");
     width: 100%;
-    height: calc(108vh - 50px);
+    height: 70vh;
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
@@ -27,9 +27,13 @@ div.banner {
 
 
 
-h1.intro{
-  padding-top:15%;
-  font-size: 4rem;
+h1.cabecera{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  padding-top:10%;
+  font-size: 3rem;
   font-weight: bold;
   width:100vw;  
 }
@@ -38,6 +42,21 @@ h1.intro{
         min-height: 30vh;
     }
 }
+
+h2.cabecera{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    padding-top:1%;
+    font-size: 2em;
+    width:100vw;  
+  }
+  @media (max-width:768px) {
+      .banner{
+          min-height: 30vh;
+      }
+  }
 
 /*CORREGIR FOTO*/
 .foto img{
