@@ -58,16 +58,6 @@ h2.cabecera{
       }
   }
 
-/*CORREGIR FOTO*/
-.foto img{
-    width: 200px;
-    height: 200px;
-    border-radius:60% ;
-    align-items:flex-end;
-    display: flex;
-}
-
-
 
 
 footer{
