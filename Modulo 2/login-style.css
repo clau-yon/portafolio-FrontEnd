@@ -1,0 +1,29 @@
+*{
+    
+    margin:0;
+    padding: 0;
+}
+
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 100vh;
+}
+
+
+footer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #a6a8a8;
+    height:auto;
+    width:100vw;
+    font-family: "Open Sans";
+    padding-top: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.footer-bottom{
+    width: 100vw;
+    text-align: center;
+    font-size: 14px;
+}

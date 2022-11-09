@@ -17,13 +17,26 @@
 <nav class="navbar navbar-expand-lg bg-head">    
     <div class="container-fluid">
         <a class="navbar-brand-content-center" href="/index.html"><img src="/images/arg-programa.png"></a>
-        <!--User-->
-        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#loginModal">
-            <i class="fa-solid fa-user-lock"></i>
-        </button>
-        
-    </div>
-</nav>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Contacto</a>
+              </li>
+            </ul>
+              <!--User-->
+        <!--RESPALDO <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#loginModal">-->
+            <button type="button" class="btn btn-light">
+                <a href="/login.html"><i class="fa-solid fa-user-lock"></i></a>
+            </button>
+            </div>
+    </div>             
+  </nav>
 <!--FIN NAVBAR-->
 
   <!-- Modal -->
@@ -35,7 +48,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <!--Pruebas-->
+        
           <form>
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Email address</label>
@@ -56,8 +69,12 @@
 
 <!--Banner-->
     <div class="banner">
-        <h1 class="cabecera">Hola, soy Claudia Yon</h1> 
-        <h2 class="cabecera">Desarrollador Full Stack Jr.</h2>
+        <div class="row"></div>
+        <div class="col-5 mt-5 pt-5">
+            <h1 class="cabecera">Hola, soy Claudia Yon</h1> 
+            <h2 class="cabecera">Desarrollador Full Stack Jr.</h2>
+        </div>
+        </div>
     </div>
       
 
@@ -68,11 +85,15 @@
         <div class="p-3 bg-square bg-opacity-50 rounded text-white mt-3 pt-3">
             <div class="Acerca">
                 <p class="fw-bold fs-3 text-warning">Acerca:</p>
+
                 <div class="row">
-                    <div class="col-2 pt-2 ">
-                        <img class="rounded-circle img-fluid w-90" src="/images/1656337559716.jfif">
+                    <div class="col-md-2">
+                        <div class="card mb-2">
+                            <img src="/images/1656337559716.jfif">
+                        </div>
                     </div>
-                    <div class="col-10 mt-5">
+                    
+                    <div class="col-md-10 mt-2">
                         <p>Soy una persona en constante aprendizaje y con gran interés por los desafíos, adaptable a cambios con habilidades interpersonales que me permiten fácilmente adaptarme a grupos de trabajo.</p>
                         <p>Busco un puesto en el mundo IT que me permita demostrar mis habilidades y expresar mi creatividad en el ramo.</p>
                         <p>Redes Sociales:</p>
@@ -100,7 +121,7 @@
     </div>
    
 
-    <!--Experiencia-->
+    <!--Experiencia
     <div class="container-fluid">
         <div class="p-3 bg-square bg-opacity-50 rounded text-white mt-3 pt-3">
             <div class="Experiencia">
@@ -111,23 +132,26 @@
             </div>
         </div>
     </div>
-
+    -->
     <!--Educacion-->
     <div class="container-fluid">
         <div class="p-3 bg-square bg-opacity-50 rounded text-white mt-3 pt-3">
             <div class="Educacion">
             <p class="fw-bold fs-3 text-warning">Educación:</p>
-            <dl>
-                <dt>Tecnico Superior en Ciencia de Datos e Inteligencia Artificial</dt>
-                <dd>Instituto Superior Politecnico Cordoba - 2022</dd>
-            </dl>
-            
-            <dl>
-                <dt>Tecnico Superior en Desarrollo Web y Aplicaciones Digitales</dt>
-                <dd>Instituto Superior Politecnico Cordoba - 2022</dd>
-            </dl>
-            <p>Cursos Realizados:</p>
+
             <div class="row">
+                <div class="col-6 pt-5">
+                    <dl>
+                        <dt>Tecnico Superior en Ciencia de Datos e Inteligencia Artificial</dt>
+                        <dd>Instituto Superior Politecnico Cordoba - 2022</dd>
+                    </dl>
+                    
+                    <dl>
+                        <dt>Tecnico Superior en Desarrollo Web y Aplicaciones Digitales</dt>
+                        <dd>Instituto Superior Politecnico Cordoba - 2022</dd>
+                    </dl>
+                </div>
+
                 <div class="col-6">
                     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
@@ -163,8 +187,10 @@
                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
                           <span class="visually-hidden">Next</span>
                         </button>
-                      </div>
+                    </div>
                 </div>
+
+
             </div>
               
            
@@ -240,11 +266,10 @@
         <p class="fw-bold fs-3 text-warning">Proyectos:</p>    
             <div class="col-12- col-md-6 col-lg-3">
                 <div class="card">
-                    <img src="/images/descarga (1).png" class="card-img-top" alt="...">
+                    <img src="/images/proye-1.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title text-primary">Proyecto Final de Argentina Programa</h5> 
-                        <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ullam consequuntur sunt, ipsam assumenda autem, incidunt recusandae et nihil quia praesentium reiciendis quae quos! Quod doloribus quia iure reprehenderit aut!
-                        </p>
+                        <h5 class="card-title text-primary">Proyecto de Argentina Programa</h5> 
+                        <p class="card-text text-dark">Se realizo una pagina web para el Proyecto de la 2 Etapa, tecnologias que se usaron fueron: Html, Css, Boostrap, TypeScript, Angular,Java.</p>
                      <a href="/index.html" class="btn btn-primary">Click aqui</a>
                     </div>
                 </div>
