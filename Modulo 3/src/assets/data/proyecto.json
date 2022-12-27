@@ -26,28 +26,30 @@
     "educacion":
     [{
         "id": 1,
+        "logo" : "../assets/images/ispc.png",
         "titulo" : "Tecnico Superior en Ciencia de Datos e Inteligencia Artificial",
         "institucion" : "Instituto Superior Politecnico Cordoba",    
-        "año": 2022
+        "year": "2022"
     },
 
     { 
         "id":2,
+        "logo" : "../assets/images/ispc.png",
         "titulo" : "Tecnico Superior en Desarrollo Web y Aplicaciones Digitales",
         "institucion" : "Instituto Superior Politecnico Cordoba",
-        "año": 2022  
+        "year": "2022"  
     }],
 
     "skills":
     [{  "id": 1,
         "nombre": "Html",
         "porcentaje" : 90,
-        "color": "yellow"
+        "color": "warning"
     },
     {   "id": 2,
         "nombre": "Css",
         "porcentaje" : 80,
-        "color": "red"
+        "color": "danger"
     },
     {  "id": 3,
         "nombre": "Javascript",
@@ -57,37 +59,37 @@
     {  "id": 4,
         "nombre": "Python",
         "porcentaje" : 70,
-        "color": "green"
+        "color": "success"
     },
 
 
     {  "id": 5,
         "nombre": "Comunicacion",
         "porcentaje" : 90,
-        "color": "blue"
+        "color": "info"
     },
     {  "id": 6,
     "nombre": "Trabajo en Equipo",
     "porcentaje" : 90,
-    "color": "red"
+    "color": "danger"
     },
     {  "id": 7,
     "nombre": "Adaptabilidad",
     "porcentaje" : 90,
-    "color": "green"
+    "color": "success"
     },
     {  "id": 8,
     "nombre": "Creatividad",
     "porcentaje" : 60,
-    "color": "blue"
+    "color": "info"
     }],
     
     "proyecto":
     [{
         "id": 1,
         "imagenProyecto" : "../assets/images/proye-1.png",
-        "titulo" : "Proyecto de Argentina Programa",
-        "institucion" : "Se realizo una pagina web para el Proyecto de la 2 Etapa, tecnologias que se usaron fueron: Html, Css, Boostrap, TypeScript, Angular,Java."    
+        "nombreProyecto" : "Proyecto de Argentina Programa",
+        "descripcion" : "Se realizo una pagina web para el Proyecto de la 2 Etapa, tecnologias que se usaron fueron: Html, Css, Boostrap, TypeScript, Angular,Java."    
 
     }]
 

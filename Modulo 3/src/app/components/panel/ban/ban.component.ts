@@ -19,9 +19,3 @@ export class BanComponent implements OnInit{
   }
 }
 
-/*
-export class BanComponent {
-
-}
-*/
-

@@ -8,40 +8,21 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            <h2 class="fs-5">Imagen mediante url:</h2>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Foto mediante url::</label>
             <input class="form-control" type="url">
-            <h2 class="fs-5 mt-2">Informacion:</h2>
-            <label for="exampleFormControlTextarea1" class="info"> </label>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Informacion:</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
+          </div>
+      </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-primary">Guardar</button>
         </div>
       </div>
     </div>
 </div>
-<!--modal IMAGEN-->
-<div class="modal fade" id="infotoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        
-        <div class="modal-body">
-            <div class="mb-3">
-                <div class="form-floating">
-                  <div class="mb-3">
-                    <label for="formFile" class="form-label">Añadir url:</label>
-                    <input class="form-control" type="url">
-                  </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Guardar</button>
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
   
   <!--MODAL TEXTO-->
   <div class="modal fade" id="infotextModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -49,19 +30,20 @@
       <div class="modal-content">
         <div class="modal-header">
           <h1 class="modal-title fs-5" id="exampleModalLabel">Editar Acerca:</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
             <div class="mb-3">
-                <div class="form-floating">
-                  <label for="exampleFormControlTextarea1" class="info"> </label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                  
-                </div>
+              <label for="exampleFormControlTextarea1" class="form-label">Foto mediante url::</label>
+              <input class="form-control" type="url">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Informacion:</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-primary">Guardar</button>
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>

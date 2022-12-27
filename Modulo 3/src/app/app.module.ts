@@ -31,6 +31,8 @@ import { PaginafailComponent } from './components/paginafail/paginafail.componen
 import { ModalComponent } from './components/modal/modal.component';
 import { ModalEducaComponent } from './components/modal/modal-educa/modal-educa.component';
 import { ModalAcercaComponent } from './components/modal/modal-acerca/modal-acerca.component';
+import { ModalSkillComponent } from './components/modal/modal-skill/modal-skill.component';
+import { ModalProyectoComponent } from './components/modal/modal-proyecto/modal-proyecto.component';
 
 
 @NgModule({
@@ -61,6 +63,8 @@ import { ModalAcercaComponent } from './components/modal/modal-acerca/modal-acer
     ModalComponent,
     ModalEducaComponent,
     ModalAcercaComponent,
+    ModalSkillComponent,
+    ModalProyectoComponent,
 
   ],
   imports: [
