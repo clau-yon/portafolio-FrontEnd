@@ -7,9 +7,10 @@
 body{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     height: 100vh;
-    /*background-color:#8d99ae ;*/
 }
-
+.back{
+    background-color:#8d99ae ;  
+}
 .text{
     padding:50px;
 }
@@ -23,18 +24,22 @@ div.banner {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+   
+}
+.cabecera{
+    box-sizing: border-box;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
 }
 
-h1.cabecera{
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  color: #fff;
-  padding-top:10%;
-  font-size: 3rem;
-  font-weight: bold;
-  width:100vw;  
+.cabecera1{
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-end;
+    height: 30vh;
+    padding-top: 30px;
 }
 @media (max-width:768px) {
     .banner{
@@ -42,20 +47,6 @@ h1.cabecera{
     }
 }
 
-h2.cabecera{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    color: #fff;
-    padding-top:1%;
-    font-size: 2em;
-    width:100vw;  
-  }
-  @media (max-width:768px) {
-      .banner{
-          min-height: 30vh;
-      }
-  }
 
 
 footer{
@@ -64,14 +55,34 @@ footer{
     right: 0;
     background: #a6a8a8;
     height:auto;
-    width:100vw;
+    width:100%;
     font-family: "Open Sans";
-    padding-top: 15px;
+    padding-top: 25px;
     color: rgb(0, 0, 0);
 }
 
 .footer-bottom{
-    width: 100vw;
+    width: 100%;
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
+}
+
+
+
+.cajon{
+    width: 100%;
+    padding: 20px;
+}
+#nv-color{
+    background-color: #a6a8a8;
+    width: 100%;
+}
+
+#box{
+    background-color: #494c6f;
+}
+
+.logo{
+    width: 15vh;
+
 }
