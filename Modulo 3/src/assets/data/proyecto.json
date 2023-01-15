@@ -1,0 +1,96 @@
+{
+    "redes" :
+    [{ 
+        "id": 1,
+        "icon" : "bxl-linkedin"         
+        },
+
+        { 
+        "id":2,
+        "icon" : "bxl-github"
+    }],
+
+    "nombre" : "Claudia Yon",
+    "puesto" : "Desarrollador Full Stack Jr.",   
+    "banner" : "../assets/images/which-desk-setup-is-best-for-a-developer-379-1602744788208.webp",
+
+    "acerca":
+    [{
+        "id": 1,
+        "imagen" : "../assets/images/1656337559716.jfif",
+        "contenido" : "Soy una persona en constante aprendizaje y con gran interés por los desafíos, adaptable a cambios con habilidades interpersonales que me permiten fácilmente adaptarme a grupos de trabajo. Busco un puesto en el mundo IT que me permita demostrar mis habilidades y expresar mi creatividad en el ramo."    
+
+    }],
+
+
+    "educacion":
+    [{
+        "id": 1,
+        "logo" : "../assets/images/ispc.png",
+        "titulo" : "Tecnico Superior en Ciencia de Datos e Inteligencia Artificial",
+        "institucion" : "Instituto Superior Politecnico Cordoba",    
+        "year": "2022"
+    },
+
+    { 
+        "id":2,
+        "logo" : "../assets/images/ispc.png",
+        "titulo" : "Tecnico Superior en Desarrollo Web y Aplicaciones Digitales",
+        "institucion" : "Instituto Superior Politecnico Cordoba",
+        "year": "2022"  
+    }],
+
+    "skills":
+    [{  "id": 1,
+        "nombre": "Html",
+        "porcentaje" : 90,
+        "color": "warning"
+    },
+    {   "id": 2,
+        "nombre": "Css",
+        "porcentaje" : 80,
+        "color": "danger"
+    },
+    {  "id": 3,
+        "nombre": "Javascript",
+        "porcentaje" : 50,
+        "color": "blue"
+    },
+    {  "id": 4,
+        "nombre": "Python",
+        "porcentaje" : 70,
+        "color": "success"
+    },
+
+
+    {  "id": 5,
+        "nombre": "Comunicacion",
+        "porcentaje" : 90,
+        "color": "info"
+    },
+    {  "id": 6,
+    "nombre": "Trabajo en Equipo",
+    "porcentaje" : 90,
+    "color": "danger"
+    },
+    {  "id": 7,
+    "nombre": "Adaptabilidad",
+    "porcentaje" : 90,
+    "color": "success"
+    },
+    {  "id": 8,
+    "nombre": "Creatividad",
+    "porcentaje" : 60,
+    "color": "info"
+    }],
+    
+    "proyecto":
+    [{
+        "id": 1,
+        "imagenProyecto" : "../assets/images/proye-1.png",
+        "nombreProyecto" : "Proyecto de Argentina Programa",
+        "descripcion" : "Se realizo una pagina web para el Proyecto de la 2 Etapa, tecnologias que se usaron fueron: Html, Css, Boostrap, TypeScript, Angular,Java."    
+
+    }]
+
+}

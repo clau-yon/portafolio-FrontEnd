@@ -1,0 +1,35 @@
+<!--Hard Skills  & Soft-->
+<div class="container-fluid cajon">
+      
+  <div id="box" class="p-3 bg-square bg-opacity-50 rounded text-white mt-3 pt-3">
+    <div class="row">
+        <div class="col-11">
+        <p class="fw-bold fs-3 text-warning">Hard Skills & Soft Skills:</p>
+        </div>
+        <div class="col-1">
+          <div data-bs-toggle="modal" data-bs-target="#skillsplusModal">
+            <i class="fa-sharp fa-solid fa-plus"></i>
+          </div>
+        </div>
+    </div>
+    <div class="Hard Skills">
+      <div class="row pt-1"  *ngFor="let skills of skillList">
+        <div class="col-1 mt-2" data-bs-toggle="modal" data-bs-target="#skillsModal">
+          <i class="fa-solid fa-pencil"></i>
+          <i class="fa-solid fa-trash ms-2"></i>
+        </div>  
+        <div class="col-11 mt-2">
+            <p class="container-fluid">{{skills.nombre}}:</p>
+        <div>
+
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped bg-{{skills.color}} progress-bar-animated" role="progressbar" aria-label="Example with label" style="width: 90%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">{{skills.porcentaje}}%</div>
+        </div>
+      </div>
+    </div>   
+        
+  </div>
+
+</div>
+
+<app-modal-skill></app-modal-skill>
