@@ -1,14 +1,17 @@
 <!--Banner-->
 <div class="banner">
-  <div class="col-12 cabecera">
-    <h1 class="d-flex text-white justify-content-center pt-5 cabecera1" id="">Hola, soy {{portafolio.nombre}}</h1> 
-    <h2 class="d-flex text-white justify-content-center">{{portafolio.puesto}}</h2>
+  <div class="d-flex text-white justify-content-center text-light pt-3">
+    <div data-bs-toggle="modal" data-bs-target="#bannertextModal">
+    <i class="fa-solid fa-pencil"></i>
+    </div>
+    <div>
+      <i class="fa-solid fa-trash ms-2"></i>
+    </div>
   </div>
- 
+  <div class="col-12 cabecera" *ngFor="let banner of portafolioList">
+    <h1 class="d-flex text-white justify-content-center pt-5 cabecera1" id="">Hola, soy {{banner.nombre}} {{banner.apellido}}</h1>  
+    <h2 class="d-flex text-white justify-content-center">{{banner.puesto}}</h2>
+  </div>
 </div>
 
-
-<div background="/src/assets/images/desk.jpg">
-
-</div>
-
+<app-modalbanner></app-modalbanner>

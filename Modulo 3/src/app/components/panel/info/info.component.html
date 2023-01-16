@@ -1,16 +1,12 @@
-<div class="container-fluid cajon">
+<section id="acerca" class="container-fluid cajon">
   <div id="box" class="p-3 bg-square bg-opacity-50 rounded text-white mt-3 pt-3">
     <div class="row">
       <div class="col-11">
-        <p class="fw-bold fs-3 text-warning">Acerca: </p>
+        <p class="fw-bold fs-3 text-warning">Acerca:</p>
       </div>
-      <div class="col-1">
-        <div data-bs-toggle="modal" data-bs-target="#acercaModalMore">
-          <i class="fa-sharp fa-solid fa-plus"></i>
-        </div>
-      </div>  
+      
+    </div>  
         
-    </div>
     <div class="row" *ngFor="let informe of informacionList">
 
           <div class="col-2"> 
@@ -30,5 +26,5 @@
               
     </div>
   </div>
-</div>
+</section>
 <app-modal-acerca></app-modal-acerca>

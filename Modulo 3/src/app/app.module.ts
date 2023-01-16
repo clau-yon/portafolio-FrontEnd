@@ -3,7 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
+
 import { DatosService } from './servicios/datos.service';
+import { UsuarioService } from './servicios/usuario.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -33,6 +36,8 @@ import { ModalEducaComponent } from './components/modal/modal-educa/modal-educa.
 import { ModalAcercaComponent } from './components/modal/modal-acerca/modal-acerca.component';
 import { ModalSkillComponent } from './components/modal/modal-skill/modal-skill.component';
 import { ModalProyectoComponent } from './components/modal/modal-proyecto/modal-proyecto.component';
+import { from } from 'rxjs';
+import { ModalbannerComponent } from './components/modal/modalbanner/modalbanner.component';
 
 
 @NgModule({
@@ -65,11 +70,14 @@ import { ModalProyectoComponent } from './components/modal/modal-proyecto/modal-
     ModalAcercaComponent,
     ModalSkillComponent,
     ModalProyectoComponent,
-
+    ModalbannerComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     HttpClientModule
   ],
   providers: [],

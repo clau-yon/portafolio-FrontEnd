@@ -1,4 +1,4 @@
-<div class="container-fluid cajon">
+<section id="educacion" class="container-fluid cajon">
     <div id="box" class="p-3 bg-square bg-opacity-50 rounded text-white mt-3 pt-3">
       <div class="row">
         <div class="col-11">
@@ -14,7 +14,7 @@
             <div class="col-11 pt-3">
               
                 <dl>
-                  <img [src]="educar.logo" class="logo" alt="...">
+                  <img [src]="educar.logo" class="logo" [alt]="educar.institucion">
                   <dt>{{educar.titulo}}</dt>
                   <dd>{{educar.institucion}} - {{educar.year}}</dd>
                 </dl> 
@@ -32,7 +32,7 @@
 
     </div>  
     </div>
-</div>
+</section>
 <app-modal-educa></app-modal-educa>
 
 

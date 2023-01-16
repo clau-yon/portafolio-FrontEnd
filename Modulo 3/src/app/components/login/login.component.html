@@ -1,38 +1,54 @@
-
-<!--
 <app-header></app-header>
 <div class="container-fluid bg-back mt-5">
         <div class="text">
-
+    <!--FORMULARIO-->
     
             <div class="container text-center">
                 <div class="row">
                     <div class="col-2">
-               
+                        <!--IZQUIERDO-->
                     </div>
                     <div class="col-8">
                         <div class="modal-body">
-                            <form>
+                            <form [formGroup]="form" (ngSubmit)="onEnviar($event)">
                                 <div id="formulario" class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    <label for="example" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="email">
+                                    <div id="emailHelp" class="form-text">Ingrese su correo electronico</div>
                                 </div>
+                                <div *ngIf="Mail?.errors && Mail?.touched">
+                                    <p *ngIf="Mail?.hasError('required')" class="fail">
+                                      El email es requerido.
+                                    </p>
+                                    <p *ngIf="Mail?.hasError('email')" class="fail">
+                                      El formato del email debe ser válido.
+                                    </p>
+                                  </div>
+    
                                 <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password">
+                                    <div id="passwordHelp" class="form-text">Ingrese su contraseña</div>
                                 </div>
-                                <a class="btn btn-primary" routerLink="/panel" role="button">Ingresar</a>
+    
+                                <div *ngIf="Password?.errors && Password?.touched">
+                                    <p *ngIf="Password?.hasError('required')" class="fail">
+                                      El password es requerido.
+                                    </p>
+                                    
+                                  </div>
+
+                                <button type="submit" class="btn btn-primary" routerLink="/panel">Ingresar</button>  
+                                <!--<a class="btn btn-primary" routerLink="/panel" role="button">Ingresar</a>-->
                             </form>
                         </div>
                         <small>Si no posees una cuenta, <a routerLink="/registro">Registrate</a></small>
                     </div>
                     <div class="col-2">
-              
+                        <!--DERECHO-->
                     </div>
                 </div>
             </div>
     
         </div>
 </div>    
-
--->
