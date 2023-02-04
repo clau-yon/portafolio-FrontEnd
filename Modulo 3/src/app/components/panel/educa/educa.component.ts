@@ -12,6 +12,7 @@ export class EducaComponent implements OnInit{
   titulos : string = '';
   instituciones : string = '';
   years : string = '';
+  
   constructor(private datos: DatosService){}
   ngOnInit(): void {
       this.datos.getDatos().subscribe(data=>{

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-boton-login',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class BotonLoginComponent {
 
+  constructor(private router:Router){}
+  ngOnInit():void{
+
+  }
+
+  login(){
+    this.router.navigate(['/login'])
+  }
 }

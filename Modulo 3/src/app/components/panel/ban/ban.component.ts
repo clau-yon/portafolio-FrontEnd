@@ -8,13 +8,18 @@ import { DatosService } from 'src/app/servicios/datos.service';
 })
 
 export class BanComponent implements OnInit{
-  nombre:string = '';
-  portafolio:any;
+  nombres:string = '';
+  apellidos:string = '';
+  puestos:string = '';
+  portafolioList:any=[];
   //any=[]
   constructor(private datos: DatosService){}
   ngOnInit(): void {
       this.datos.getDatos().subscribe(data=>{
-        this.portafolio=data;
+        this.portafolioList=data.banner;
+        this.nombres=data.nombre;
+        this.apellidos=data.apellido;
+        this.puestos=data.puesto;
       })
   }
 }

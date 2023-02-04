@@ -1,30 +1,50 @@
-<app-header></app-header>
+<!--Navbar-->
+<nav id="nv-color" class="navbar navbar-expand-lg bg-head">    
+    <div class="container-fluid">
+        <a class="navbar-brand-content-center" routerLink=""><img src="assets/images/arg-programa.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+ 
+            </ul>
+        </div>
+    </div>             
+</nav>
 <div class="container-fluid bg-back mt-5">
     <div class="text">
 <!--FORMULARIO-->
 
         <div class="container text-center">
             <div class="row">
-                <div class="col-2">
+                <div class="col-1">
                     <!--IZQUIERDO-->
                 </div>
-                <div class="col-8">
+                <div class="col-10 card text-bg-light">
+                    <div class="card-header"><img src="../../../assets/images/register.svg" width="30%"></div>
                     <div class="modal-body">
                         <form>
                             <div id="formulario" class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <label for="example">Nombre:</label>
+                                <input formControlName ="name" type="name" class="form-control" id="exampleInputEmail1" >
+                            </div>
+                            <div id="formulario" class="mb-3">
+                                <label for="example">Email:</label>
+                                <input formControlName ="email" type="email" class="form-control" id="exampleInputEmail1" >
                             </div>
                             <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                <label for="exampleInputPassword1">Contraseña:</label>
+                                <input formControlName ="password" type="password" class="form-control" id="exampleInputPassword1">
                             </div>
+
                             <button type="submit" class="btn btn-primary">Registrarme</button>
                         </form>
                     </div>
                     <small>Si ya posees una cuenta, <a routerLink="/login">Ingresa</a></small>
                 </div>
-                <div class="col-2">
+                <div class="col-1">
                     <!--DERECHO-->
                 </div>
             </div>
